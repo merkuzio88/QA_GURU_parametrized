@@ -37,7 +37,7 @@ public class ParametrizedTests {
 
     @MethodSource
     @ParameterizedTest(name = "Проверка на локали {0} заголовков {1}")
-    @Tag("MINOR")
+    @Tag("CRITICAL")
     @DisplayName("Проверка заголовков меню на различных локалях")
     void correctHeadlinesShouldBeVisible(Language language, List<String> expectedHeadlines) {
 
@@ -59,7 +59,7 @@ public class ParametrizedTests {
     @CsvFileSource(resources = "/bannerTexts.csv")
     @ParameterizedTest(name = "Проверка текста {1} на локали {0}")
     @Tags({
-            @Tag("BLOCKER"),
+            @Tag("CRITICAL"),
             @Tag("SMOKE")
     })
     @DisplayName("Проверка текста баннера на различных локалях")
