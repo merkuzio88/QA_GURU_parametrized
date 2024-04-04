@@ -50,7 +50,7 @@ public class ParametrizedTests {
     @ParameterizedTest(name = "Проверка лого на локали {0}")
     @Tag("BLOCKER")
     @DisplayName("Проверка отображения лого на различных локалях")
-    void selectedCurrencyShouldBeDisplayedOnCurrencyButton(Language language) {
+    void checkingLogoIsVisible(Language language) {
         mainPage
                 .openPage(language.url)
                 .checkingLogo();
@@ -63,7 +63,7 @@ public class ParametrizedTests {
             @Tag("SMOKE")
     })
     @DisplayName("Проверка текста баннера на различных локалях")
-    void checkingBa(String language, String expectedText){
+    void checkingBannerTextIsVisible(String language, String expectedText){
         mainPage
                 .openPage(language)
                 .checkingBannerText(expectedText);
