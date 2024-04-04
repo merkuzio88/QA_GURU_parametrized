@@ -14,7 +14,7 @@ import utils.Language;
 import java.util.List;
 import java.util.stream.Stream;
 
-public class ParametrizedTests {
+public class ParametrizedTests extends TestBase {
 
     MainPage mainPage = new MainPage();
 

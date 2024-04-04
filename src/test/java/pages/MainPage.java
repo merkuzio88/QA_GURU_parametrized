@@ -17,7 +17,7 @@ public class MainPage {
     private final SelenideElement banner = $(".with-video-button-banner__title");
 
     public MainPage openPage(String language) {
-        open("https://siberianhealth.com/" + language);
+        open("/" + language);
 
         return this;
     }
